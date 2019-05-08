@@ -8,27 +8,29 @@ namespace Repositoty
 {
     public class ClassArt : ClassNotify
     {
-        private string _artID;
         private string _picturePath;
         private string _pictureDescription;
         private string _pictureTitel;
+        private int _id;
 
         public ClassArt()
         {
 
         }
 
-        
 
-        public string artID
+
+
+
+        public int id
         {
-            get { return _artID; }
+            get { return _id; }
             set
             {
-                if (value != _artID)
+                if (value != _id)
                 {
-                    _artID = value;
-                    Notify("artID");
+                    _id = value;
+                    Notify("id");
                 }
             }
         }

@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ClassCallWebAPI.cs" />
     <Compile Include="ClassFileIO.cs" />
+    <Compile Include="EntityConfigurationArt.cs" />
     <Compile Include="EntityConfigurationArtTrade.cs" />
     <Compile Include="EntityConfigurationCustomer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
