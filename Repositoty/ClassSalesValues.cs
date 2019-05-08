@@ -8,33 +8,22 @@ namespace Repositoty
 {
     public class ClassSalesValues : ClassNotify
     {
+        private ClassCurrency _classCurrency;
+        private int _id;
+        private int _customerID;
+        private int _artID;
+        private string _customersBidUSD;
+        private string _customersBidEUR;
+        private string _customersBidOwnValuta;
+        private string _priceWithFeesUSD;
+        private string _priceWithFeesEUR;
+        private string _priceWithFeesOwnValuta;
+        private string _date;
 
-        
+
         public ClassSalesValues()
         {
             
-        }
-
-        private string _bidUSD;
-        private string _bidEUR;
-        private string _bidOwnValuta;
-        private string _priceWithFeeUSD;
-        private string _priceWithFeeEUR;
-        private string _priceWithFeeOwnValuta;
-        private ClassCurrency _classCurrency;
-        private string _currencyID;
-
-        public string currencyID
-        {
-            get { return _currencyID; }
-            set
-            {
-                if (value != _currencyID)
-                {
-                    _currencyID = value;
-                    Notify("currencyID");
-                }
-            }
         }
         
         public ClassCurrency classCurrency
@@ -49,85 +38,153 @@ namespace Repositoty
                 }
             }
         }
-        
-        public string priceWithFeeOwnValuta
+
+
+
+        public int id
         {
-            get { return _priceWithFeeOwnValuta; }
+            get { return _id; }
             set
             {
-                if (value != _priceWithFeeOwnValuta)
+                if (value != _id)
                 {
-                    _priceWithFeeOwnValuta = value;
-                    Notify("priceWithFeeOwnValuta");
+                    _id = value;
+                    Notify("id");
                 }
             }
         }
-        
-        public string priceWithFeeEUR
+
+
+
+        public int customerID
         {
-            get { return _priceWithFeeEUR; }
+            get { return _customerID; }
             set
             {
-                if (value != _priceWithFeeEUR)
+                if (value != _customerID)
                 {
-                    _priceWithFeeEUR = value;
-                    Notify("priceWithFeeEUR");
+                    _customerID = value;
+                    Notify("customerID");
                 }
             }
         }
-               
-        public string priceWithFeeUSD
+
+
+
+        public int artID
         {
-            get { return _priceWithFeeUSD; }
+            get { return _artID; }
             set
             {
-                if (value != _priceWithFeeUSD)
+                if (value != _artID)
                 {
-                    _priceWithFeeUSD = value;
-                    Notify("priceWithFeeUSD");
+                    _artID = value;
+                    Notify("artID");
                 }
             }
         }
-        
-        public string bidOwnValuta
+
+
+
+        public string customersBidUSD
         {
-            get { return _bidOwnValuta; }
+            get { return _customersBidUSD; }
             set
             {
-                if (value != _bidOwnValuta)
+                if (value != _customersBidUSD)
                 {
-                    _bidOwnValuta = value;
-                    Notify("bidOwnValuta");
+                    _customersBidUSD = value;
+                    Notify("customersBidUSD");
                 }
             }
         }
-        
-        public string bidEUR
+
+
+
+        public string customersBidEUR
         {
-            get { return _bidEUR; }
+            get { return _customersBidEUR; }
             set
             {
-                if (value != _bidEUR)
+                if (value != _customersBidEUR)
                 {
-                    _bidEUR = value;
-                    Notify("bidEUR");
+                    _customersBidEUR = value;
+                    Notify("customersBidEUR");
                 }
             }
         }
-               
-        public string bidUSD
+
+
+
+        public string customersBidOwnValuta
         {
-            get { return _bidUSD; }
+            get { return _customersBidOwnValuta; }
             set
             {
-                if (value != _bidUSD)
+                if (value != _customersBidOwnValuta)
                 {
-                    if (decimal.TryParse(value, out decimal X))
-                    {
-                        _bidUSD = value;
-                        CalculateAll();
-                    }                   
-                    Notify("bidUSD");                    
+                    _customersBidOwnValuta = value;
+                    Notify("customersBidOwnValuta");
+                }
+            }
+        }
+
+
+
+        public string priceWithFeesUSD
+        {
+            get { return _priceWithFeesUSD; }
+            set
+            {
+                if (value != _priceWithFeesUSD)
+                {
+                    _priceWithFeesUSD = value;
+                    Notify("priceWithFeesUSD");
+                }
+            }
+        }
+
+
+
+        public string priceWithFeesEUR
+        {
+            get { return _priceWithFeesEUR; }
+            set
+            {
+                if (value != _priceWithFeesEUR)
+                {
+                    _priceWithFeesEUR = value;
+                    Notify("priceWithFeesEUR");
+                }
+            }
+        }
+
+
+
+        public string priceWithFeesOwnValuta
+        {
+            get { return _priceWithFeesOwnValuta; }
+            set
+            {
+                if (value != _priceWithFeesOwnValuta)
+                {
+                    _priceWithFeesOwnValuta = value;
+                    Notify("priceWithFeesOwnValuta");
+                }
+            }
+        }
+
+
+
+        public string date
+        {
+            get { return _date; }
+            set
+            {
+                if (value != _date)
+                {
+                    _date = value;
+                    Notify("date");
                 }
             }
         }

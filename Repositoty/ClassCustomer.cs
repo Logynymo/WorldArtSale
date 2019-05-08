@@ -33,7 +33,7 @@ namespace Repositoty
                 if (value != _customerID)
                 {
                     _customerID = value;
-                    Notify("costumerID");
+                    Notify("customerID");
                 }
             }
         }
@@ -48,7 +48,7 @@ namespace Repositoty
                 {
                     _customerCurrencyID = value;
                     currencyID = _customerCurrencyID;
-                    Notify("costumerCurrencyID");
+                    Notify("customerCurrencyID");
                 }
             }
         }

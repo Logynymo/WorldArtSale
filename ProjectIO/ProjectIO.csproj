@@ -31,7 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,16 +49,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassCallWebAPI.cs" />
-    <Compile Include="ClassDbCon.cs" />
     <Compile Include="ClassFileIO.cs" />
-    <Compile Include="ClassWorldArtSaleDB.cs" />
+    <Compile Include="EntityConfigurationArtTrade.cs" />
+    <Compile Include="EntityConfigurationCustomer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorldArtSaleContext.cs" />
+    <Compile Include="WorldArtSaleSeedInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Repositoty\Repositoty.csproj">
       <Project>{e0d65970-f6c2-469c-bcf4-409f58c4159f}</Project>
       <Name>Repositoty</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
