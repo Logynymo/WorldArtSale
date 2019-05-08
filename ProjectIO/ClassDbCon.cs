@@ -126,8 +126,6 @@ namespace ProjectIO
             return res;
         }
 
-        
-
         /// <summary> 
         /// The method starts by creating a new empty DataTable.
         /// A connection to the database is then opened.
@@ -143,8 +141,6 @@ namespace ProjectIO
         /// <param name="sqlQuery">String containing the SQL-query</param>
         /// <returns>DataTable containing rows relevant to the SQL-query</returns> 
         /// 
-        
-
         protected DataTable DbReturnDataTable(string sqlQuery)
         {
             DataTable dtRes = new DataTable();
