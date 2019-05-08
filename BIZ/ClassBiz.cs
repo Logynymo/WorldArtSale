@@ -15,7 +15,7 @@ namespace BIZ
         
         ClassCallWebAPI classCallWebAPI = new ClassCallWebAPI();
         ClassFileIO classFileIO = new ClassFileIO();
-        ClassWorldArtSaleDB classWorldArtSaleDB = new ClassWorldArtSaleDB();
+        //ClassWorldArtSaleDB classWorldArtSaleDB = new ClassWorldArtSaleDB();
 
         private ClassCurrency _classCurrency;
         private List<ClassCustomer> _listCustomer;
@@ -33,8 +33,8 @@ namespace BIZ
             classCustomer = new ClassCustomer();
             classCustomer.classCurrency = classCurrency;
 
-            listCustomer = classWorldArtSaleDB.GetAllCustomerFromDB(classCurrency);
-            listClassArt = classWorldArtSaleDB.GetAllArtFromDB();
+            //listCustomer = classWorldArtSaleDB.GetAllCustomerFromDB(classCurrency);
+            //listClassArt = classWorldArtSaleDB.GetAllArtFromDB();
         }
 
         
@@ -152,22 +152,22 @@ namespace BIZ
 
         public void SaveArtToDB()
         {
-            classWorldArtSaleDB.SaveArtDataInDB(classArt);
+            //classWorldArtSaleDB.SaveArtDataInDB(classArt);
             listClassArt.Clear();
-            listClassArt = classWorldArtSaleDB.GetAllArtFromDB();
+           // listClassArt = classWorldArtSaleDB.GetAllArtFromDB();
         }
 
         public void SaveCustomerToDB()
         {
             if (classCustomer.customerID == 0)
             {
-                classWorldArtSaleDB.SaveCustomerInDB(classCustomer);
+               // classWorldArtSaleDB.SaveCustomerInDB(classCustomer);
             }
             else
             {
-                classWorldArtSaleDB.UpdateCustomerInDB(classCustomer);
+                //classWorldArtSaleDB.UpdateCustomerInDB(classCustomer);
             }
-            listCustomer = classWorldArtSaleDB.GetAllCustomerFromDB(classCurrency);            
+            //listCustomer = classWorldArtSaleDB.GetAllCustomerFromDB(classCurrency);            
         }
 
     }

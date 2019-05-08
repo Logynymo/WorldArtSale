@@ -189,7 +189,7 @@ namespace Repositoty
             }
         }
 
-        private void CalculateAll()
+        /*private void CalculateAll()
         {   
                 decimal valutaRateOvnValuta = classCurrency.rates[currencyID];
                 decimal.TryParse(bidUSD, out decimal calckUSD);
@@ -202,6 +202,6 @@ namespace Repositoty
                 priceWithFeeUSD = (calckUSD * 1.075M).ToString("#,##0.00");
                 priceWithFeeEUR = ((calckUSD * valutaRateEUR) * 1.075M).ToString("#,##0.00");
                 priceWithFeeOwnValuta = ((calckUSD * valutaRateOvnValuta) * 1.075M).ToString("#,##0.00");
-        }
+        }*/
     }
 }

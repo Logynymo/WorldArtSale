@@ -22,8 +22,7 @@ namespace Repositoty
         private string _email;
         private string _phoneNo;
         private string _maxBid;
-        private string _customerCurrencyID;
-        
+        private string _preferredCurrency;
 
         public int customerID
         {
@@ -38,21 +37,18 @@ namespace Repositoty
             }
         }
 
-
-        public string customerCurrencyID
+        public string preferredCurrency
         {
-            get { return _customerCurrencyID; }
+            get { return _preferredCurrency; }
             set
             {
-                if (value != _customerCurrencyID)
+                if (value != _preferredCurrency)
                 {
-                    _customerCurrencyID = value;
-                    currencyID = _customerCurrencyID;
-                    Notify("customerCurrencyID");
+                    _preferredCurrency = value;
+                    Notify("preferredCurrency");
                 }
             }
         }
-
 
         public string maxBid
         {

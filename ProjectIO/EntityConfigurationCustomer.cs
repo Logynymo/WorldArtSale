@@ -33,7 +33,7 @@ namespace ProjectIO
             this.Property(c => c.maxBid)
                 .HasColumnType("money")
                 .IsRequired();
-            this.Property(c => c.customerCurrencyID)
+            this.Property(c => c.preferredCurrency)
                 .HasMaxLength(3)
                 .IsRequired();
         }

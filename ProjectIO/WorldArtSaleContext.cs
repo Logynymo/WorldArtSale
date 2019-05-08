@@ -29,7 +29,9 @@ namespace ProjectIO
         /// <param name="modelBuilder">DbModelBuilder</param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new )
+            modelBuilder.Configurations.Add(new EntityConfigurationArt());
+            modelBuilder.Configurations.Add(new EntityConfigurationArtTrade());
+            modelBuilder.Configurations.Add(new EntityConfigurationCustomer());
         }
     }
 }

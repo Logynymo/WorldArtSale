@@ -37,7 +37,7 @@ namespace WorldArtSale
             var XX = myCombo.SelectedValue;
             if (XX != null)
             {
-                CB.classCustomer.customerCurrencyID = XX.ToString();
+                CB.classCustomer.preferredCurrency = XX.ToString();
             }
             
         }

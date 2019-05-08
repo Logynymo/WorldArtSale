@@ -280,6 +280,5 @@ namespace Repositoty
             BRL = ((1 / rates["BRL"]) * KRkurs).ToString("##0.0000");
             HKD = ((1 / rates["HKD"]) * KRkurs).ToString("##0.0000");
         }
-
     }
 }
