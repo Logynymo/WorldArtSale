@@ -10,11 +10,11 @@ using Repositoty;
 
 namespace ProjectIO
 {
-    class WorldArtSaleContext : DbContext
+    public class WorldArtSaleContext : DbContext
     {
         public WorldArtSaleContext() : base("WorldArtSaleEksamen")
         {
-            Database.SetInitializer(new WorldArtSaleSeedInitializer());
+            //Database.SetInitializer(new WorldArtSaleSeedInitializer());
         }
 
         //DbSets representing the tables of the database.
@@ -32,6 +32,7 @@ namespace ProjectIO
             modelBuilder.Configurations.Add(new EntityConfigurationArt());
             modelBuilder.Configurations.Add(new EntityConfigurationArtTrade());
             modelBuilder.Configurations.Add(new EntityConfigurationCustomer());
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

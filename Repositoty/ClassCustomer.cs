@@ -21,7 +21,7 @@ namespace Repositoty
         private string _country;
         private string _email;
         private string _phoneNo;
-        private string _maxBid;
+        private decimal _maxBid;
         private string _preferredCurrency;
 
         public int customerID
@@ -50,15 +50,15 @@ namespace Repositoty
             }
         }
 
-        public string maxBid
+        public decimal maxBid
         {
             get { return _maxBid; }
             set
             {
                 if (value != _maxBid)
                 {
-                    decimal customerMaxBid = Convert.ToDecimal(value);
-                    _maxBid = customerMaxBid.ToString("#,##0.00");
+                    //decimal customerMaxBid;
+                    _maxBid = value;
                     Notify("maxBid");
                 }
             }

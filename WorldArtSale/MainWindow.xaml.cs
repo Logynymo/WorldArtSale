@@ -34,6 +34,7 @@ namespace WorldArtSale
         {
             InitializeComponent();
             CB = new ClassBiz();
+            CB.MakeDataBase();
             userControlExchangerates = new UserControlExchangerates(CB);
             userControlCostumer = new UserControlCostumer(CB);
             userControlBidCalculation = new UserControlBidCalculation(CB);

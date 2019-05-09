@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Data.Entity.Validation;
 using System.Threading.Tasks;
 using ProjectIO;
 using Repositoty;
 using Newtonsoft.Json;
+using System.Windows;
 
 namespace BIZ
 {
@@ -24,6 +25,8 @@ namespace BIZ
         private List<ClassArt> _listClassArt;
         private ClassCustomer _fallBackCustomer;
 
+        
+
 
         public ClassBiz()
         {            
@@ -37,7 +40,23 @@ namespace BIZ
             //listClassArt = classWorldArtSaleDB.GetAllArtFromDB();
         }
 
-        
+        public void MakeDataBase()
+        {
+            try
+            {
+                using (WorldArtSaleContext ctx = new WorldArtSaleContext())
+                {
+                    ctx.Database.CreateIfNotExists();
+                }
+            }
+            catch (DbEntityValidationException ex)
+            {
+                foreach (var t in ex.EntityValidationErrors)
+                {
+                    MessageBox.Show(t.ValidationErrors.First().ErrorMessage);
+                }
+            }
+        }
 
         public List<ClassArt> listClassArt
         {

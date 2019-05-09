@@ -12,12 +12,12 @@ namespace Repositoty
         private int _id;
         private int _customerID;
         private int _artID;
-        private string _customersBidUSD;
-        private string _customersBidEUR;
-        private string _customersBidOwnValuta;
-        private string _priceWithFeesUSD;
-        private string _priceWithFeesEUR;
-        private string _priceWithFeesOwnValuta;
+        private decimal _customersBidUSD;
+        private decimal _customersBidEUR;
+        private decimal _customersBidOwnValuta;
+        private decimal _priceWithFeesUSD;
+        private decimal _priceWithFeesEUR;
+        private decimal _priceWithFeesOwnValuta;
         private string _date;
 
 
@@ -86,7 +86,7 @@ namespace Repositoty
 
 
 
-        public string customersBidUSD
+        public decimal customersBidUSD
         {
             get { return _customersBidUSD; }
             set
@@ -101,7 +101,7 @@ namespace Repositoty
 
 
 
-        public string customersBidEUR
+        public decimal customersBidEUR
         {
             get { return _customersBidEUR; }
             set
@@ -116,7 +116,7 @@ namespace Repositoty
 
 
 
-        public string customersBidOwnValuta
+        public decimal customersBidOwnValuta
         {
             get { return _customersBidOwnValuta; }
             set
@@ -131,7 +131,7 @@ namespace Repositoty
 
 
 
-        public string priceWithFeesUSD
+        public decimal priceWithFeesUSD
         {
             get { return _priceWithFeesUSD; }
             set
@@ -146,7 +146,7 @@ namespace Repositoty
 
 
 
-        public string priceWithFeesEUR
+        public decimal priceWithFeesEUR
         {
             get { return _priceWithFeesEUR; }
             set
@@ -161,7 +161,7 @@ namespace Repositoty
 
 
 
-        public string priceWithFeesOwnValuta
+        public decimal priceWithFeesOwnValuta
         {
             get { return _priceWithFeesOwnValuta; }
             set
