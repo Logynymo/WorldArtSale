@@ -24,8 +24,10 @@ namespace BIZ
         private ClassArt _classArt;
         private List<ClassArt> _listClassArt;
         private ClassCustomer _fallBackCustomer;
+        private WorldArtSaleContext getdata = new WorldArtSaleContext();
 
-        
+
+
 
 
         public ClassBiz()
@@ -34,10 +36,15 @@ namespace BIZ
             GetAllCurrencyIdAndNames();
 
             classCustomer = new ClassCustomer();
-            classCustomer.classCurrency = classCurrency;
+            //classCustomer.classCurrency = classCurrency;
 
             //listCustomer = classWorldArtSaleDB.GetAllCustomerFromDB(classCurrency);
             //listClassArt = classWorldArtSaleDB.GetAllArtFromDB();
+
+
+            listClassArt = new List<ClassArt>(getdata.ArtTable.ToList() as List<ClassArt>);
+            listCustomer = new List<ClassCustomer>(getdata.Customer.ToList() as List<ClassCustomer>);
+
         }
 
         public void MakeDataBase()

@@ -46,7 +46,7 @@ namespace WorldArtSale
         {
             ComboBox comb = (ComboBox)sender;
             ClassCustomer classCustomer = (ClassCustomer)comb.SelectedItem;
-            classCustomer.classCurrency = CB.classCurrency;
+            //classCustomer.classCurrency = CB.classCurrency;
             CB.classCustomer = classCustomer;
         }
 

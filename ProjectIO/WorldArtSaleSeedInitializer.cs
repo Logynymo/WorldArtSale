@@ -24,6 +24,7 @@ namespace ProjectIO
             artPiecesList.Add(new ClassArt() { picturePath = $"insert Path Here",
                                                pictureDescription = "Insert Desc Here",
                                                pictureTitel = "Insert Title Here" });
+
         }
 
         protected override void Seed(WorldArtSaleContext context)
@@ -36,6 +37,10 @@ namespace ProjectIO
             {
                 context.Customer.Add(individualCustomer);
             }
+            /*foreach (var item in collection)
+            {
+
+            }*/
             context.SaveChanges();
             base.Seed(context);
         }

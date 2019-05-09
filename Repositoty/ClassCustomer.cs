@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repositoty
 {
-    public class ClassCustomer : ClassSalesValues
+    public class ClassCustomer : ClassNotify
     {
 
         public ClassCustomer()

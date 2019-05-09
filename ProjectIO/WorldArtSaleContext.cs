@@ -14,7 +14,7 @@ namespace ProjectIO
     {
         public WorldArtSaleContext() : base("WorldArtSaleEksamen")
         {
-            //Database.SetInitializer(new WorldArtSaleSeedInitializer());
+            Database.SetInitializer(new WorldArtSaleSeedInitializer());
         }
 
         //DbSets representing the tables of the database.
