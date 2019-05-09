@@ -21,9 +21,21 @@ namespace ProjectIO
 
         public WorldArtSaleSeedInitializer()
         {
-            artPiecesList.Add(new ClassArt() { picturePath = $"insert Path Here",
-                                               pictureDescription = "Insert Desc Here",
-                                               pictureTitel = "Insert Title Here" });
+            artPiecesList.Add(new ClassArt() { picturePath = $"C:/CodeMappe/Image/dsb1.jpg",
+                                               pictureDescription = "CHOOO CHOOOOOOOOOOO!",
+                                               pictureTitel = "Train, Fast, Smoke." });
+            artPiecesList.Add(new ClassArt()
+            {
+                picturePath = $"C:/CodeMappe/Image/dsb3.jpg",
+                pictureDescription = "im a bird.",
+                pictureTitel = "Smash Bird."
+            });
+            artPiecesList.Add(new ClassArt()
+            {
+                picturePath = $"C:/CodeMappe/Image/dsb2.jpg",
+                pictureDescription = "Hjulene på toget drejer rundt rundt rundt!",
+                pictureTitel = "Van Gogh's most renown painting."
+            });
 
         }
 

@@ -8,6 +8,10 @@ namespace ProjectIO
 {
     class EntityConfigurationArt : EntityTypeConfiguration<ClassArt>
     {
+        /// <summary>
+        /// Code-First. This sets the Table to which the data gets written to.
+        /// it then sets the key and properties.
+        /// </summary>
         public EntityConfigurationArt()
         {
             this.ToTable("ArtTable");

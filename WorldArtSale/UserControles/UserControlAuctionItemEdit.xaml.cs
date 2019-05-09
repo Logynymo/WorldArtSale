@@ -62,7 +62,7 @@ namespace WorldArtSale
                     if (OFD.ShowDialog() == true)
                     {
                         //classBiz.classArt.picturePath = OFD.FileName;
-                        string newPath = @"C:\ImageSale\" + OFD.SafeFileName;
+                        string newPath = @"C:\CodeMappe\Image" + OFD.SafeFileName;
                         File.Copy(OFD.FileName, newPath);
                         classBiz.classArt.picturePath = newPath;
                     }

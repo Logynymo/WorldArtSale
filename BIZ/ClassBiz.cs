@@ -29,7 +29,9 @@ namespace BIZ
 
 
 
-
+        /// <summary>
+        /// Constructor, creates instances.
+        /// </summary>
         public ClassBiz()
         {            
             classCurrency = new ClassCurrency();
@@ -46,7 +48,9 @@ namespace BIZ
             listCustomer = new List<ClassCustomer>(getdata.Customer.ToList() as List<ClassCustomer>);
 
         }
-
+        /// <summary>
+        /// Creates the database if it doesnt exist, based on the code in WorldArtSaleContext.
+        /// </summary>
         public void MakeDataBase()
         {
             try
@@ -179,7 +183,6 @@ namespace BIZ
         public void SaveArtToDB()
         {
             //classWorldArtSaleDB.SaveArtDataInDB(classArt);
-            listClassArt.Clear();
            // listClassArt = classWorldArtSaleDB.GetAllArtFromDB();
         }
 
